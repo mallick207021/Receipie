@@ -8,10 +8,12 @@ export default function Navbar() {
   console.log(searchParam);
 
   return (
-    <nav className="flex justify-between items-center py-8 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
-      <h2 className="text-2xl font-semibold">
-        <NavLink to={"/"}>FoodRecipe</NavLink>
+    <nav className="bg-gray-200 flex justify-between items-center px-6 py-7 container mx-auto flex-col lg:flex-row gap-5 lg:gap-0">
+     
+      <h2 className="text-4xl font-bold text-gray-900 ">
+        <NavLink to={"/"}>Cuisines</NavLink>
       </h2>
+      
       <form onSubmit={handleSubmit}>
         <input
           type="text"
@@ -26,7 +28,7 @@ export default function Navbar() {
         <li>
           <NavLink
             to={"/"}
-            className="text-black hover:text-gray-700 duration-300"
+            className="text-gray-900 hover:text-gray-500 duration-300 font-bold"
           >
             Home
           </NavLink>
@@ -34,9 +36,9 @@ export default function Navbar() {
         <li>
           <NavLink
             to={"/favorites"}
-            className="text-black hover:text-gray-700 duration-300"
+            className="text-gray-900 hover:text-gray-500 duration-300 font-bold"
           >
-            favorites
+            Favorites
           </NavLink>
         </li>
       </ul>
